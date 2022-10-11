@@ -2,8 +2,8 @@
 include_once __DIR__.'/pg_helper.php';
 
 // Define environment variable
-define('PG_REQUEST_URL', 'https://secure.paycaps.com/pgui/jsp/paymentrequest');
-define('PG_RESPONSE_URL', 'https://secure.paycaps.com/pgui/jsp/response.jsp');
+define('PG_REQUEST_URL', 'https://secure.interpayservice.com/pgui/jsp/paymentrequest');
+define('PG_RESPONSE_URL', 'https://secure.interpayservice.com/pgui/jsp/response.jsp');
 define('PG_RESPONSE_MODE', 'SALE');
 define('PG_SALT', '0000000000000000');
 define('PG_APP_ID', '0000000000000000');
